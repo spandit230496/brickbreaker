@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sandip portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!--<li><a href="#">Service</a></li>--->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+            <div class="header-text"><p>FullStack Developer</p>
+            <h1 class="">Hi,I'm <span id="spin"></span><br>
+            <h4 class="h4-head">A Mechanical Engineer turned Developer</h4></h1>
+            </div>
+           
+            </div>
+           <a> <button class="btn"> <a href="images/sandipPandit.pdf" download style="color:white">  Download</a></button></a>
+        </div>
+       
+    </div>
+   
+    <!------about--------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col-1">
+                    <img id="dev" src="images/dev.png" alt="dev.jpg">
+                </div>
+                <div class="about_col-2"><h1 class="subtitle">About me</h1>
+                    <p class="abt"> A mechanical engineer turned software developer .
+                        My goal is to achieve a good position by implementing my knowledge in
+                          IT field and focused to complete the task .</p>
+                
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front End</span></li>
+                                    <div class="frontend">
+                                        <span>HTML(Intermediate) ,</span>
+                                        <span>CSS(Intermediate) ,</span>
+                                        <span>JAVASCRIPT(Novice)</span>
+                                    </div> 
+                            
+                            
+                                <li><span>Back End</span></li>
+                                <div class="backend">
+                                    <span>Core Java ,</span>
+                                    <span>J2EE(JSP,Servlet) ,</span>
+                                    <span>Tomcat(Server)</span>
+                                </div>
+                                <li><span>Illustration Creation</span></li>
+                                <div class="WebD">
+                                    <span>Adobe Illustration(Novice) ,</span>
+                                    <span>Figma(Novice)</span>
+                                    </div>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Front End </span></li>
+                                <li><span>Back End</span></li>
+                                <li><span>Web development</span></li>
+                                <li><span>Illustration Creation</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019 </span><br>
+                                   Bachelor of Engineering</li>
+                                <li><span>2015</span><br>
+                                Diploma in Mechanical</li>
+                                <li><span>2012</span><br>
+                                Matriculation</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!----portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <div class="prtfl">Way to Connect With me</div>
+         
+         <div class="link">
+            <a href="mailto:sandip.pandit230496@gmail.com%7C">Click here to email me </a><br>
+            <a href="https://github.com/spandit230496">Click here to Find me GitHub </a><br>
+            <a href="https://www.linkedin.com/in/sandip-pandit-243630144">Click here to Connect me Linkedln </a>
+         
+            <img class="con" src="images/connect.jpg"alt="connect">
+         </div>
+        
+            
+            
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link"); 
+          }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab") ;
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+        <script></script>
+</body>
+</html>
